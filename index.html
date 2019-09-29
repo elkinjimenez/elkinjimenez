@@ -18,10 +18,10 @@
     }
   </style>
 </head>
-<body style="font-family: 'Questrial', sans-serif;" id="contenido_pagina">
+<body style="font-family: 'Questrial', sans-serif;">
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container-fluid">
-      <a onclick="principal()" class="navbar-brand wow fadeInRight white-text font-weight-bold active nav-item">ELKIN JIMÉNEZ</a>
+      <a href="" class="navbar-brand wow fadeInRight white-text font-weight-bold active nav-item">ELKIN JIMÉNEZ</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miNav" aria-controls="miNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -41,42 +41,44 @@
       </div>
     </div>
   </nav>
-  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-2" data-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h6 class="h6-responsive wow fadeInUp">HOLA. MI NOMBRE ES</h6>
-              <h1 class="display-1 font-weight-bold wow fadeInUp" data-wow-delay="1s">Elkin Jiménez</h1>
-              <h5 class="h5-responsive wow fadeInUp" data-wow-delay="1.6s">y éste es mi grandioso mundo laboral.</h5>
+  <section id="contenido_pagina" style="height: 100%">
+    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h6 class="h6-responsive wow fadeInUp">HOLA. MI NOMBRE ES</h6>
+                <h1 class="display-1 font-weight-bold wow fadeInUp" data-wow-delay="1s">Elkin Jiménez</h1>
+                <h5 class="h5-responsive wow fadeInUp" data-wow-delay="1.6s">y éste es mi grandioso mundo laboral.</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg'); background-repeat: no-repeat; background-size: cover;">
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h6 class="h6-responsive wow fadeInUp">HOLA. MI NOMBRE ES</h6>
+                <h1 class="display-1 font-weight-bold wow fadeInUp" data-wow-delay="1s">Elkin Jiménez</h1>
+                <h5 class="h5-responsive wow fadeInUp" data-wow-delay="1.6s">Calidad de productos es lo que me representa.</h5>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg'); background-repeat: no-repeat; background-size: cover;">
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h6 class="h6-responsive wow fadeInUp">HOLA. MI NOMBRE ES</h6>
-              <h1 class="display-1 font-weight-bold wow fadeInUp" data-wow-delay="1s">Elkin Jiménez</h1>
-              <h5 class="h5-responsive wow fadeInUp" data-wow-delay="1.6s">Calidad de productos es lo que me representa.</h5>
-            </div>
-          </div>
-        </div>
-      </div>
+      <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+        <i class="fas fa-chevron-right"></i>
+      </a>
     </div>
-    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-      <i class="fas fa-chevron-left"></i>
-    </a>
-    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-      <i class="fas fa-chevron-right"></i>
-    </a>
-  </div>
+  </section>
   <footer class="page-footer text-center">
     <div class="container-fluid py-4 wow fadeInDown">
       <div class="row">
@@ -113,10 +115,6 @@
 
     function contactame(){
       $("#contenido_pagina").load("contact.html");
-    }
-
-    function principal(){
-      $("#contenido_pagina").load("index.html");
     }
   </script>
 </body>
