@@ -36,7 +36,7 @@
             <a onclick="aboutme()" class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">SOBRE MI</h6></a>
           </li>
           <li class="nav-item my-auto wow fadeInLeft" data-wow-delay="1s">
-            <a class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">PORTAFOLIO</h6></a>
+            <a onclick="portafolio()" class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">PORTAFOLIO</h6></a>
           </li>
           <li class="nav-item my-auto wow fadeInLeft" data-wow-delay="1.5s">
             <a onclick="contactame()" class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">CONTÁCTAME</h6></a>
@@ -126,6 +126,10 @@
 
     function aboutme(){
       $("#contenido_pagina").load("about.html");
+    }
+
+    function portafolio(){
+      $("#contenido_pagina").load("portafolio.html");
     }
   </script>
 </body>
