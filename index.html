@@ -19,28 +19,7 @@
   </style>
 </head>
 <body style="font-family: 'Questrial', sans-serif;">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container-fluid">
-      <a href="" class="navbar-brand wow fadeInRight white-text font-weight-bold active nav-item">ELKIN JIMÉNEZ</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miNav" aria-controls="miNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="miNav">
-        <ul class="navbar-nav mr-auto"></ul>
-        <ul class="navbar-nav text-center wow fadeInLeft" data-wow-delay="2s">
-          <li class="nav-item my-auto">
-            <a class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">SOBRE MI</h6></a>
-          </li>
-          <li class="nav-item my-auto">
-            <a class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">PORTAFOLIO</h6></a>
-          </li>
-          <li class="nav-item my-auto">
-            <a class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">CONTÁCTAME</h6></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div id="menu_navbar"></div>
   <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
@@ -77,34 +56,7 @@
       <i class="fas fa-chevron-right"></i>
     </a>
   </div>
-  <footer class="page-footer text-center">
-    <div class="container-fluid py-4 wow fadeInDown">
-      <div class="row">
-        <div class="col-md-4 mt-3">
-          <h6 class="h6-responsive">Mis redes</h6>
-          <a class="m-2" href="https://www.facebook.com/elkinjmenez" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
-          <a class="m-2" href="https://twitter.com/elomjiga" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-          <a class="m-2" href="https://instagram.com/elkinjmenez" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
-        </div>
-        <div class="col-md-4 mt-3">
-          <h6 class="h6-responsive my-0">Llámame:</h6>
-          <a href="tel:+573158514199"><h6 class="h6-responsive">+57 315 8514199</h6></a>
-          <h6 class="h6-responsive mb-0 mt-3">Escríbeme:</h6>
-          <a href="mailto:elomjiga@hotmail.com"><h6 class="h6-responsive">elomjiga@hotmail.com</h6></a>
-        </div>
-        <div class="col-md-4 mt-3">
-          <a href="">Políticas de privacidad</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright py-3">
-      <div class="wow fadeInDown">
-        © 2019 Copyright:
-        <a>Elkin Jiménez</a>
-      </div>
-    </div>
-  </footer>
-  <div id="cabecera"></div>
+  <div id="pie_footer"></div>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/popper.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -113,7 +65,8 @@
     new WOW().init();
     window.onload=function()
     {
-      $("#cabecera").load("add/about.html");
+      $("#menu_navbar").load("add/navbar.html");
+      $("#pie_footer").load("add/footer.html");
     }
   </script>
 </body>
