@@ -11,9 +11,13 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
   <style type="text/css">
-    @media (min-width: 800px) and (max-width: 850px) {
+    @media (max-width: 850px) {
       .navbar:not(.top-nav-collapse) {
         background: #1C2331!important;
+      }
+
+      .display-1{
+        font-size: 3.2em;
       }
     }
   </style>
@@ -29,7 +33,7 @@
         <ul class="navbar-nav mr-auto"></ul>
         <ul class="navbar-nav text-center">
           <li class="nav-item my-auto wow fadeInLeft" data-wow-delay="0.5s">
-            <a class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">SOBRE MI</h6></a>
+            <a onclick="aboutme()" class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">SOBRE MI</h6></a>
           </li>
           <li class="nav-item my-auto wow fadeInLeft" data-wow-delay="1s">
             <a class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">PORTAFOLIO</h6></a>
@@ -118,6 +122,10 @@
 
     function contactame(){
       $("#contenido_pagina").load("contact.html");
+    }
+
+    function aboutme(){
+      $("#contenido_pagina").load("about.html");
     }
   </script>
 </body>
