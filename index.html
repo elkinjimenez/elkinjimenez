@@ -1,9 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Portafolio</title>
+  <meta charset="utf-8">
+  <title>Portafolio | Elkin Jiménez</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #1C2331!important;
+      }
+    }
+  </style>
 </head>
-<body>
-<h1>Aquí irá mi portafolio...</h1>
+<body style="font-family: 'Josefin Sans', sans-serif;">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container-fluid">
+      <a href="" class="navbar-brand white-text font-weight-bold active nav-item">ELKIN JIMÉNEZ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miNav" aria-controls="miNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="miNav">
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav text-center">
+          <li class="nav-item my-auto">
+            <a class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">SOBRE MI</h6></a>
+          </li>
+          <li class="nav-item my-auto">
+            <a class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">PORTAFOLIO</h6></a>
+          </li>
+          <li class="nav-item my-auto">
+            <a class="nav-link"><h6 class="my-0 h6-responsive mx-3 font-weight-bold">CONTÁCTAME</h6></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h6 class="h6-responsive">HOLA. MI NOMBRE ES</h6>
+              <h1 class="display-1 font-weight-bold">Elkin Jiménez</h1>
+              <h5 class="h5-responsive">y éste es mi grandioso mundo laboral.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg'); background-repeat: no-repeat; background-size: cover;">
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h6 class="h6-responsive">HOLA. MI NOMBRE ES</h6>
+              <h1 class="display-1 font-weight-bold">Elkin Jiménez</h1>
+              <h5 class="h5-responsive">Calidad de productos es lo que me representa.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <i class="fas fa-chevron-left"></i>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <i class="fas fa-chevron-right"></i>
+    </a>
+  </div>
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+    <div class="pt-4">
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank" role="button">Download MDB
+        <i class="fas fa-download ml-2"></i>
+      </a>
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start free tutorial
+        <i class="fas fa-graduation-cap ml-2"></i>
+      </a>
+    </div>
+    <hr class="my-4">
+    <div class="pb-4">
+      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+        <i class="fab fa-facebook-f mr-3"></i>
+      </a>
+      <a href="https://twitter.com/MDBootstrap" target="_blank">
+        <i class="fab fa-twitter mr-3"></i>
+      </a>
+      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+        <i class="fab fa-youtube mr-3"></i>
+      </a>
+      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+        <i class="fab fa-google-plus-g mr-3"></i>
+      </a>
+      <a href="https://dribbble.com/mdbootstrap" target="_blank">
+        <i class="fab fa-dribbble mr-3"></i>
+      </a>
+      <a href="https://pinterest.com/mdbootstrap" target="_blank">
+        <i class="fab fa-pinterest mr-3"></i>
+      </a>
+      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+        <i class="fab fa-github mr-3"></i>
+      </a>
+      <a href="http://codepen.io/mdbootstrap/" target="_blank">
+        <i class="fab fa-codepen mr-3"></i>
+      </a>
+    </div>
+    <div class="footer-copyright py-3">
+      © 2019 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript">
+    new WOW().init();
+  </script>
 </body>
 </html>
