@@ -45,7 +45,7 @@
 				<div class="col-md-12">
 					<div class="row flex-center">
 						<div class="col-md-7">
-							<h1 class="display-1 purple-text font-weight-bold mb-4 wow fadeInUp">Sobre mi.</h1>
+							<h1 class="display-1 font-weight-bold mb-4 purple-text wow fadeInUp">Sobre mi.</h1>
 							<h3 class="h3-responsive font-weight-bold wow fadeInUp" data-wow-delay="0.5s">Un gusto, mi nombre es Elkin Omar Jiménez García, apasionado por desarrollar y actualizar mis conocimientos día a día.</h3>
 							<h4 class="h4-responsive my-4 wow fadeInUp" data-wow-delay="1s">Soy Tecnólogo en desarrollo de Sistemas Informáticos (TDSI) y estudiante de último semestre de la carrera Ingeniería de Sistemas.</h4>
 							<h1 class="h1-responsive my-5 purple-text wow fadeInUp" data-wow-delay="1.5s">...¿Qué más sobre mi?</h1>
@@ -53,6 +53,35 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-md-12 mt-5">
+					<i class="fas fa-skating purple-text fa-5x wow flip"></i>
+					<h1 class="display-3 font-weight-bold mb-4 wow fadeInUp">Mis habilidades</h1>
+				</div>
+				<div class="col-md-4 mt-5">
+					<h3 class="font-weight-bold h3-responsive">Java</h3>
+					<canvas id="java"></canvas>
+				</div>
+				<div class="col-md-4 mt-5">
+					<h3 class="font-weight-bold h3-responsive">Javascript</h3>
+					<canvas id="javascript"></canvas>
+				</div>
+				<div class="col-md-4 mt-5">
+					<h3 class="font-weight-bold h3-responsive">HTML y CSS</h3>
+					<canvas id="html"></canvas>
+				</div>
+				<div class="col-md-4 mt-5">
+					<h3 class="font-weight-bold h3-responsive">UX</h3>
+					<canvas id="ux"></canvas>
+				</div>
+				<div class="col-md-4 mt-5">
+					<h3 class="font-weight-bold h3-responsive">UI</h3>
+					<canvas id="ui"></canvas>
+				</div>
+				<div class="col-md-4 mt-5">
+					<h3 class="font-weight-bold h3-responsive">Bases de datos</h3>
+					<canvas id="db"></canvas>
+				</div>
+				<div class="col-md-12 my-4"></div>
 				<div class="col-md-6 mt-5 wow fadeInUp">
 					<div style="height: 100%" class="card secondary-color-dark">
 						<div class="card-body">
@@ -90,6 +119,98 @@
 	</div>
 	<script type="text/javascript">
 		new WOW().init();
+
+		var java = document.getElementById("java").getContext('2d');
+		var myjava = new Chart(java, {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [80, 20],
+					backgroundColor: ["#304ffe", "#212121"],
+					hoverBackgroundColor: ["#0023eb", "#212121"]
+				}]
+			},
+			options: {
+				responsive: true,
+			}
+		});
+
+		var javascript = document.getElementById("javascript").getContext('2d');
+		var myjavascript = new Chart(javascript, {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [72, 28],
+					backgroundColor: ["#ffff00", "#212121"],
+					hoverBackgroundColor: ["#dede23", "#212121"]
+				}]
+			},
+			options: {
+				responsive: true,
+			}
+		});
+
+		var html = document.getElementById("html").getContext('2d');
+		var myhtml = new Chart(html, {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [95, 5],
+					backgroundColor: ["#00C851", "#212121"],
+					hoverBackgroundColor: ["#068c3c", "#212121"]
+				}]
+			},
+			options: {
+				responsive: true,
+			}
+		});
+
+		var ux = document.getElementById("ux").getContext('2d');
+		var myux = new Chart(ux, {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [90, 10],
+					backgroundColor: ["#2BBBAD", "#212121"],
+					hoverBackgroundColor: ["#209186", "#212121"]
+				}]
+			},
+			options: {
+				responsive: true,
+			}
+		});
+
+		var ui = document.getElementById("ui").getContext('2d');
+		var myui = new Chart(ui, {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [93, 7],
+					backgroundColor: ["#d50000", "#212121"],
+					hoverBackgroundColor: ["#b71c1c", "#212121"]
+				}]
+			},
+			options: {
+				responsive: true,
+			}
+		});
+
+		var db = document.getElementById("db").getContext('2d');
+		var mydb = new Chart(db, {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [75, 25],
+					backgroundColor: ["#aa00ff", "#212121"],
+					hoverBackgroundColor: ["#4a148c", "#212121"]
+				}]
+			},
+			options: {
+				responsive: true,
+			}
+		});
+
+
 	</script>
 </body>
 </html>
