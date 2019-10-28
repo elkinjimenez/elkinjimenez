@@ -14,7 +14,7 @@
   <link href="css/estilos.css" rel="stylesheet">
 </head>
 
-<body class="elegant-color-dark white-text" style="font-family: 'Questrial', sans-serif;">
+<body style="font-family: 'Questrial', sans-serif;">
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container-fluid">
       <a href="" class="navbar-brand wow fadeInRight white-text font-weight-bold active nav-item">ELKIN JIMÉNEZ</a>
@@ -129,7 +129,11 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script type="text/javascript">
 
-    new WOW().init();
+    animar();
+
+    function animar() {
+      new WOW().init();
+    }
 
     function contactame() {
       $("#contenido_pagina").load("contact.html");
