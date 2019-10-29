@@ -13,3 +13,7 @@ function aboutme() {
 function portafolio() {
     $("#contenido_pagina").load("portafolio.html");
 }
+
+function estudios() {
+    $("#contenido_pagina").load("studies.html");
+}
