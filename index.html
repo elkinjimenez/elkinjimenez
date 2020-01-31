@@ -195,11 +195,10 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script type="text/javascript" src="js/funciones.js"></script>
   <script type="text/javascript">
+
     animar();
 
     var fecha = new Date();
-
-    var anio = fecha.getFullYear();
 
     var month = new Array();
     month[0] = "Enero";
@@ -215,7 +214,7 @@
     month[10] = "Noviembre";
     month[11] = "Diciembre";
 
-    console.log(fecha);
+    var anio = fecha.getFullYear();
 
     var mes = month[fecha.getMonth()];
 
