@@ -5,8 +5,8 @@
         <h6 class="h6-responsive">Mis redes sociales</h6>
         <a class="m-2" href="https://www.facebook.com/elkinjmenez" target="_blank"><i
             class="fab fa-facebook fa-lg"></i></a>
-        <a class="m-2" href="https://twitter.com/elomjiga" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-        <a class="m-2" href="https://instagram.com/elkinjmenez" target="_blank"><i
+        <a class="m-2" href="https://twitter.com/elkinjiga" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        <a class="m-2" href="https://instagram.com/elkin.jiga" target="_blank"><i
             class="fab fa-instagram fa-lg"></i></a>
         <a class="m-2" href="https://github.com/elkinjimenez" target="_blank"><i class="fab fa-github fa-lg"></i></a>
       </div>
@@ -28,7 +28,7 @@
   <div class="footer-copyright py-4">
     <div class="wow fadeInDown" data-wow-delay="0.8s">
       <h6 class="h6-responsive my-0">
-        <span id="mes"></span> / <span id="year"></span>
+        {{(today | date:'MMMM') | titlecase}} / {{today | date: 'yyyy'}}
       </h6>
       <h6 class="my-0 font-weight-bold">Elkin Jiménez</h6>
     </div>
