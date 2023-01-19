@@ -9,6 +9,7 @@ import { AppComponent } from './modules/root/app.component';
 import { HomeComponent } from './modules/home/home.component';
 import { NavComponent } from './modules/nav/nav.component';
 import { FooterComponent } from './modules/footer/footer.component';
+import { PortfolioComponent } from './modules/portfolio/portfolio.component';
 
 registerLocaleData(localeEs, 'es');
 
@@ -18,7 +19,8 @@ registerLocaleData(localeEs, 'es');
     AboutComponent,
     HomeComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
