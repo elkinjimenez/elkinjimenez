@@ -10,6 +10,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { NavComponent } from './modules/nav/nav.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import { PortfolioComponent } from './modules/portfolio/portfolio.component';
+import { StudiesComponent } from './modules/studies/studies.component';
 
 registerLocaleData(localeEs, 'es');
 
@@ -20,7 +21,8 @@ registerLocaleData(localeEs, 'es');
     HomeComponent,
     NavComponent,
     FooterComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    StudiesComponent
   ],
   imports: [
     BrowserModule,
