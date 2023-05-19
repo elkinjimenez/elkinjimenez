@@ -11,6 +11,7 @@ import { NavComponent } from './modules/nav/nav.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import { PortfolioComponent } from './modules/portfolio/portfolio.component';
 import { StudiesComponent } from './modules/studies/studies.component';
+import { ContactmeComponent } from './modules/contactme/contactme.component';
 
 registerLocaleData(localeEs, 'es');
 
@@ -22,7 +23,8 @@ registerLocaleData(localeEs, 'es');
     NavComponent,
     FooterComponent,
     PortfolioComponent,
-    StudiesComponent
+    StudiesComponent,
+    ContactmeComponent
   ],
   imports: [
     BrowserModule,
