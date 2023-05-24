@@ -56,7 +56,7 @@
     <div class="row text-center">
       <div class="col-6 col-md-4 mt-5 wow fadeInDown" data-wow-delay="0.6s">
         <h6 class="font-weight-bold h6-responsive">Java</h6>
-        <canvas id="java"></canvas>
+        <canvas #java></canvas>
       </div>
       <div class="col-6 col-md-4 mt-5 wow fadeInDown" data-wow-delay="0.8s">
         <h6 class="font-weight-bold h6-responsive">Javascript</h6>
@@ -136,21 +136,6 @@
 <script type="text/javascript">
 
   animar();
-
-  var java = document.getElementById("java").getContext('2d');
-  var myjava = new Chart(java, {
-    type: 'doughnut',
-    data: {
-      datasets: [{
-        data: [80, 20],
-        backgroundColor: ["#304ffe", "#212121"],
-        hoverBackgroundColor: ["#0023eb", "#212121"]
-      }]
-    },
-    options: {
-      responsive: true,
-    }
-  });
 
   var javascript = document.getElementById("javascript").getContext('2d');
   var myjavascript = new Chart(javascript, {
