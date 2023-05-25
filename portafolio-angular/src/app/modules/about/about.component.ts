@@ -17,6 +17,11 @@ export class AboutComponent {
   @ViewChild('db') dbCanvas!: ElementRef;
 
   private labels = ['Conocimiento al', 'Por mejorar'];
+  protected age: number;
+
+  constructor() {
+    this.age = Math.abs((new Date((new Date()).getTime() - (new Date('1996-09-15')).getTime())).getUTCFullYear() - 1970);
+  }
 
   ngAfterViewInit() {
     this.printCharts();
